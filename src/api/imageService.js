@@ -9,7 +9,7 @@ export const fetchImages = async (query, page) => {
       },
     });
     return response.data.results;
-  } catch (error) {
+  } catch {
     throw new Error("Failed to fetch images");
   }
 };
